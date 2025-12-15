@@ -21,12 +21,8 @@ const BlurText = ({ children, className = '', delay = 0 }) => {
                     y: 0,
                     duration: 1.2,
                     delay: delay,
-                    ease: "power2.out",
-                    scrollTrigger: {
-                        trigger: textRef.current,
-                        start: "top 80%",
-                        toggleActions: "play none none reverse"
-                    }
+                    ease: "power2.out"
+                    /* Removed ScrollTrigger to fix start-up jank */
                 }
             );
         }, textRef);

@@ -122,12 +122,33 @@
     text-transform: uppercase;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 900px) {
     .grid2x2 {
         grid-template-columns: 1fr;
     }
 
     .leadText {
         font-size: 1.5rem;
+    }
+
+    .bigTitle {
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+
+    .badgesRow {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+
+    .gridItem {
+        min-height: auto;
+        padding: 3rem 1rem;
+    }
+
+    /* Fix center alignment specifically for mobile */
+    .bigStat {
+        flex-wrap: wrap;
     }
 }
