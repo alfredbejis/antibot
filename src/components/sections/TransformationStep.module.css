@@ -175,12 +175,43 @@
     max-width: 300px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 900px) {
     .gridContainer {
         grid-template-columns: 1fr;
+        gap: var(--spacing-8);
     }
 
     .bigNumber {
-        font-size: 8rem;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .visualWireframe {
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    .wireframeGlobe {
+        width: 150px;
+        height: 150px;
+    }
+
+    .narrativeTitle {
+        font-size: 2rem;
+    }
+
+    .tableRow {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+
+    .rowLabel {
+        font-size: 0.7rem;
+        opacity: 0.7;
+    }
+
+    .arrow {
+        display: none;
     }
 }

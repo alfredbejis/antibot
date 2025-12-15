@@ -116,16 +116,30 @@
     border: 1px solid var(--grid-line);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 900px) {
     .row {
         grid-template-columns: 1fr;
-        gap: var(--spacing-16);
+        gap: var(--spacing-8);
+        padding: 0 1rem;
     }
 
     .reverse {
         direction: ltr;
-        /* Reset visual order on mobile usually to image first or text first consistently */
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .statValue {
+        font-size: 3rem;
+    }
+
+    .imageWrapper {
+        aspect-ratio: 16/9;
+        /* Wider on mobile to save vertical space? Or square? Let's keep 4/5 or 1/1 */
+        aspect-ratio: 1/1;
     }
 }

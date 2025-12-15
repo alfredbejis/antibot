@@ -186,7 +186,7 @@ export default function CircularGallery({ items }) {
             </div>
 
             <div className={styles.galleryContainer}>
-                <Canvas camera={{ position: [0, 0, 7], fov: 35 }}>
+                <Canvas camera={{ position: [0, 0, window.innerWidth < 900 ? 9 : 7], fov: 35 }}>
                     <ambientLight intensity={1} />
                     <Suspense fallback={<LoadingFallback />}>
                         <Carousel

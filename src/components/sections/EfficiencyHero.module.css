@@ -101,6 +101,27 @@
 @media(min-width: 1024px) {
     .gridWrapper {
         grid-template-columns: 1fr;
-        /* Stacked layout for impact */
+    }
+}
+
+@media(max-width: 768px) {
+    .section {
+        padding-top: 100px;
+    }
+
+    .massiveTitle {
+        font-size: clamp(3rem, 12vw, 5rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .subtitle {
+        text-align: left;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .cardsHeader {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
