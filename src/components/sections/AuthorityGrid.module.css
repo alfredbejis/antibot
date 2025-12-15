@@ -1,0 +1,133 @@
+.section {
+    padding-top: var(--spacing-24);
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border-strong);
+}
+
+.header {
+    margin-bottom: var(--spacing-16);
+    border-bottom: 1px solid var(--grid-line);
+    padding-bottom: var(--spacing-4);
+}
+
+.bigTitle {
+    font-size: clamp(4rem, 10vw, 8rem);
+    line-height: 0.8;
+    margin-bottom: var(--spacing-8);
+    letter-spacing: -0.05em;
+}
+
+.metaBlock {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.leadText {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    line-height: 1.2;
+    max-width: 900px;
+    margin-left: auto;
+    margin-bottom: var(--spacing-16);
+}
+
+.badgesRow {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-left: auto;
+    justify-content: flex-end;
+    margin-bottom: var(--spacing-16);
+}
+
+.badge {
+    border: 1px solid var(--text-primary);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.75rem;
+    font-family: var(--font-family-mono);
+    text-transform: uppercase;
+}
+
+.badgeYellow {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+/* 2x2 GRID */
+.grid2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--text-secondary);
+    border-left: 1px solid var(--text-secondary);
+}
+
+.gridItem {
+    border-right: 1px solid var(--text-secondary);
+    border-bottom: 1px solid var(--text-secondary);
+    padding: var(--spacing-16) var(--spacing-8);
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemIndex {
+    position: absolute;
+    top: var(--spacing-4);
+    right: var(--spacing-4);
+    font-family: var(--font-family-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.itemTitle {
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-4);
+}
+
+.itemDesc {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    max-width: 300px;
+    margin-bottom: auto;
+    /* Push stats to bottom */
+}
+
+.bigStat {
+    font-size: clamp(4rem, 6vw, 6rem);
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: var(--spacing-2);
+    display: flex;
+    align-items: baseline;
+}
+
+.blackBox {
+    background: #000;
+    color: #fff;
+    font-size: 0.3em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transform: translateY(-20px);
+    margin-left: 10px;
+}
+
+.statLabel {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+@media(max-width: 768px) {
+    .grid2x2 {
+        grid-template-columns: 1fr;
+    }
+
+    .leadText {
+        font-size: 1.5rem;
+    }
+}

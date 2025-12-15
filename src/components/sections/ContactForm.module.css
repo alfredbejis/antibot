@@ -1,0 +1,122 @@
+.section {
+    padding-top: var(--spacing-32);
+    padding-bottom: var(--spacing-8);
+    background: var(--bg-secondary);
+    /* Slightly different tone */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-32);
+    flex-grow: 1;
+}
+
+/* LEFT CTA COL */
+.ctaCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: var(--spacing-16);
+    letter-spacing: -0.03em;
+}
+
+.contactInfo {
+    display: flex;
+    gap: var(--spacing-16);
+    margin-top: auto;
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.infoBlock a {
+    font-size: 1rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--text-primary);
+}
+
+.socialLinks {
+    display: flex;
+    gap: var(--spacing-4);
+    font-family: var(--font-family-mono);
+    font-size: 0.9rem;
+}
+
+/* RIGHT FORM COL */
+.formCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.formHeader {
+    margin-bottom: var(--spacing-8);
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
+
+.massiveButton {
+    background: #000;
+    color: #fff;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    padding: 3rem 4rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.massiveButton:hover {
+    background: var(--accent-primary);
+    color: #000;
+    padding-left: 5rem;
+}
+
+/* FOOTER BAR */
+.footerBar {
+    border-top: 1px solid var(--border-strong);
+    padding-top: var(--spacing-8);
+    margin-top: var(--spacing-16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barcode {
+    display: flex;
+    align-items: flex-end;
+}
+
+@media(max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-16);
+    }
+
+    .contactInfo {
+        flex-direction: column;
+        gap: var(--spacing-8);
+    }
+
+    .massiveButton {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+}

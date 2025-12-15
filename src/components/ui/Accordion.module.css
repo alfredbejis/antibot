@@ -1,0 +1,84 @@
+.container {
+    width: 100%;
+    border-top: 1px solid #000;
+    /* Swiss Grid border */
+}
+
+.item {
+    border-bottom: 1px solid #000;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem 0;
+    background: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.header:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.headerLeft {
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+}
+
+.number {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    min-width: 2rem;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.icon {
+    font-family: var(--font-family-mono);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.contentWrapper {
+    height: 0;
+    overflow: hidden;
+}
+
+.contentInner {
+    padding: 0 0 1.5rem 4rem;
+    /* Indent content to align with title */
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .headerLeft {
+        gap: 1rem;
+    }
+
+    .contentInner {
+        padding-left: 0;
+    }
+}

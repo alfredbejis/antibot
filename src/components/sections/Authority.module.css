@@ -1,0 +1,125 @@
+.section {
+    min-height: 100vh;
+    padding: var(--spacing-32) 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(10, 10, 10, 0.8);
+    /* Slight tinted background to fade out the WebGL grid a bit */
+    backdrop-filter: blur(5px);
+}
+
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-16);
+}
+
+.title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--spacing-4);
+}
+
+.highlight {
+    color: var(--color-accent-secondary);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+}
+
+.metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-24);
+    text-align: center;
+}
+
+.statValue {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-text-primary);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: var(--spacing-2);
+}
+
+.statLabel {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+}
+
+.comparisonWrapper {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: var(--spacing-8);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.comparisonTitle {
+    margin-bottom: var(--spacing-8);
+    font-size: 1.5rem;
+}
+
+.chartContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.chartRow {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.rowLabel {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.barBackground {
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.barInefficient {
+    background: linear-gradient(90deg, #ef4444, #b91c1c);
+    color: white;
+    opacity: 0.8;
+}
+
+.barEfficient {
+    background: linear-gradient(90deg, var(--color-accent-secondary), var(--color-accent-primary));
+    color: black;
+}
+
+@media(max-width: 600px) {
+    .chartRow {
+        grid-template-columns: 1fr;
+    }
+
+    .rowLabel {
+        margin-bottom: -0.5rem;
+    }
+}

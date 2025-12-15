@@ -1,0 +1,29 @@
+.magneticBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: 1rem;
+    font-family: var(--font-family-mono);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Slight rounding for organic feel */
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+.magneticBtn:hover {
+    background: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.label {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}

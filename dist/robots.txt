@@ -1,0 +1,11 @@
+# Antigravity Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://example.com/sitemap.xml
+
+# Disallow development/admin paths (update as needed)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_dev/

@@ -1,0 +1,103 @@
+// ===========================================================================
+// BUTTON COMPONENT STYLES
+// ===========================================================================
+
+@use '../tokens' as *;
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-2;
+    padding: $space-3 $space-6;
+    font-family: $font-body;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    text-decoration: none;
+    border-radius: $radius-lg;
+    cursor: pointer;
+    transition: all 0.3s $ease-out-expo;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+
+    // Primary variant
+    &--primary {
+        background: linear-gradient(135deg, $color-primary-500 0%, $color-primary-600 100%);
+        color: $color-white;
+        box-shadow: 0 4px 20px rgba($color-primary-500, 0.3);
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba($color-primary-500, 0.4);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    // Outline variant
+    &--outline {
+        background: transparent;
+        color: $color-white;
+        border: $border-width-thin solid $color-gray-600;
+
+        &:hover {
+            border-color: $color-white;
+            background: rgba($color-white, 0.05);
+        }
+    }
+
+    // Secondary variant
+    &--secondary {
+        background: $color-gray-800;
+        color: $color-white;
+
+        &:hover {
+            background: $color-gray-700;
+        }
+    }
+
+    // Ghost variant
+    &--ghost {
+        background: transparent;
+        color: $color-gray-300;
+
+        &:hover {
+            color: $color-white;
+            background: rgba($color-white, 0.05);
+        }
+    }
+
+    // Sizes
+    &--small {
+        padding: $space-2 $space-4;
+        font-size: $font-size-xs;
+    }
+
+    &--large {
+        padding: $space-4 $space-8;
+        font-size: $font-size-base;
+        border-radius: $radius-xl;
+    }
+
+    // Full width
+    &--block {
+        width: 100%;
+    }
+
+    // Disabled state
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none !important;
+    }
+
+    // Focus state
+    &:focus-visible {
+        outline: 2px solid $color-primary-500;
+        outline-offset: 2px;
+    }
+}

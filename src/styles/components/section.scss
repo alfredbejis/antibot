@@ -1,0 +1,42 @@
+// ===========================================================================
+// SECTION BASE STYLES
+// ===========================================================================
+
+@use '../tokens' as *;
+
+.section {
+    position: relative;
+    padding: $space-24 0;
+
+    @include lg {
+        padding: $space-32 0;
+    }
+
+    &__title {
+        font-size: $font-size-4xl;
+        margin-bottom: $space-4;
+
+        @include md {
+            font-size: $font-size-5xl;
+        }
+    }
+
+    &__subtitle {
+        font-size: $font-size-lg;
+        color: $color-gray-400;
+        max-width: 60ch;
+
+        @include md {
+            font-size: $font-size-xl;
+        }
+    }
+
+    // Alternate backgrounds
+    &--dark {
+        background-color: $color-gray-900;
+    }
+
+    &--gradient {
+        background: linear-gradient(180deg, $color-black 0%, $color-gray-900 100%);
+    }
+}

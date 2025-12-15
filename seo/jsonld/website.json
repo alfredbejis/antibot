@@ -1,0 +1,12 @@
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Antigravity",
+    "url": "https://example.com",
+    "description": "Plataforma fundacional para landing pages de alto rendimiento",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://example.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+}

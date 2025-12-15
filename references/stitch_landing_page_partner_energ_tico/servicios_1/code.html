@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Servicios - Partner Energético Independiente</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FBBF24", // Amber/Gold color often used for energy, distinct against dark
+                        "background-light": "#F3F4F6", // Very light grey
+                        "background-dark": "#050505", // Deep rich black
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#0F0F0F",
+                        "border-light": "#E5E7EB",
+                        "border-dark": "#262626",
+                    },
+                    fontFamily: {
+                        display: ["Manrope", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px", // Minimalist sharp edges as per reference
+                        "lg": "2px",
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                },
+            },
+        };
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .text-stroke {
+             -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+             color: transparent;
+        }
+        .light .text-stroke {
+            -webkit-text-stroke: 1px rgba(0,0,0,0.2);
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 font-body transition-colors duration-300">
+<nav class="fixed top-0 w-full z-50 border-b border-border-light dark:border-border-dark bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm">
+<div class="max-w-[1920px] mx-auto px-6 py-4 flex justify-between items-center">
+<div class="text-xl font-display font-bold tracking-tight uppercase">
+                Energy<span class="text-primary">Partner</span>
+</div>
+<div class="flex items-center gap-2 text-xs font-mono tracking-widest cursor-pointer group">
+<span class="group-hover:text-primary transition-colors">MENU</span>
+<span class="text-primary">[+]</span>
+</div>
+</div>
+</nav>
+<main class="pt-24 min-h-screen flex flex-col">
+<header class="px-6 pb-12 md:pb-24 border-b border-border-light dark:border-border-dark">
+<div class="max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-8">
+<h1 class="text-7xl md:text-9xl font-display font-medium tracking-tighter leading-[0.9] mb-8">
+                        Soluciones <br/>
+<span class="italic font-light text-gray-400 dark:text-gray-600">Integrales</span>
+</h1>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end items-start pb-2">
+<div class="mb-4 w-full border-t border-border-light dark:border-border-dark pt-4">
+<span class="block font-mono text-xs uppercase text-gray-500 mb-2">Capítulo 02</span>
+<p class="text-lg md:text-xl font-light leading-relaxed max-w-md">
+                            Optimizamos el consumo, garantizamos el ahorro y lideramos la transición hacia un modelo energético sostenible para industrias y negocios.
+                        </p>
+</div>
+</div>
+</div>
+</header>
+<section class="flex-grow">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-b border-border-light dark:border-border-dark">
+<div class="group relative p-8 md:p-12 border-r border-border-light dark:border-border-dark hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500 flex flex-col justify-between h-[400px] md:h-[500px]">
+<div class="flex justify-between items-start">
+<span class="font-mono text-xs text-primary">01</span>
+<svg class="w-6 h-6 transform group-hover:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5"></path></svg>
+</div>
+<div>
+<h3 class="text-4xl md:text-5xl font-display mb-4 tracking-tight">Optimización</h3>
+<p class="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                            Análisis detallado de contratos y potencias para reducir costes fijos desde el primer día.
+                        </p>
+</div>
+</div>
+<div class="group relative p-8 md:p-12 border-r border-border-light dark:border-border-dark hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500 flex flex-col justify-between h-[400px] md:h-[500px]">
+<div class="flex justify-between items-start">
+<span class="font-mono text-xs text-primary">02</span>
+<svg class="w-6 h-6 transform group-hover:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5"></path></svg>
+</div>
+<div>
+<h3 class="text-4xl md:text-5xl font-display mb-4 tracking-tight">Auditorías</h3>
+<p class="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                            Inspección técnica profunda para detectar ineficiencias y fugas energéticas en sus instalaciones.
+                        </p>
+</div>
+</div>
+<div class="group relative p-8 md:p-12 hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500 flex flex-col justify-between h-[400px] md:h-[500px]">
+<div class="flex justify-between items-start">
+<span class="font-mono text-xs text-primary">03</span>
+<svg class="w-6 h-6 transform group-hover:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5"></path></svg>
+</div>
+<div>
+<h3 class="text-4xl md:text-5xl font-display mb-4 tracking-tight">Monitorización</h3>
+<p class="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                            Sistemas de telemetría en tiempo real para el control absoluto de su curva de carga.
+                        </p>
+</div>
+</div>
+</div>
+<div class="border-b border-border-light dark:border-border-dark py-4 px-6 bg-surface-light dark:bg-surface-dark">
+<div class="flex justify-between items-center max-w-[1920px] mx-auto">
+<span class="font-mono text-xs uppercase tracking-widest text-gray-500">Categoría: Infraestructura</span>
+<span class="font-mono text-xs uppercase tracking-widest text-gray-500">[Scroll]</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 border-b border-border-light dark:border-border-dark min-h-[600px]">
+<div class="lg:col-span-8 p-8 md:p-16 border-r border-border-light dark:border-border-dark flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute right-0 bottom-0 w-[500px] h-[500px] bg-primary rounded-full blur-[150px] opacity-0 group-hover:opacity-10 transition-opacity duration-700 translate-x-1/2 translate-y-1/2"></div>
+<div class="relative z-10 w-full flex justify-between border-b border-gray-300 dark:border-gray-800 pb-4 mb-8">
+<span class="font-mono text-sm">04 — SISTEMAS TÉRMICOS</span>
+<span class="font-mono text-sm">CLIMATIZACIÓN EFICIENTE</span>
+</div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h3 class="text-6xl md:text-7xl font-display tracking-tighter mb-6">Aerotermia &amp;<br/>Geotermia</h3>
+</div>
+<div class="flex flex-col justify-end">
+<p class="text-lg md:text-xl font-light mb-8">
+                                Aprovechamiento de la energía del aire y del subsuelo para climatización y ACS. Tecnologías de alto rendimiento que reducen drásticamente la huella de carbono.
+                            </p>
+<ul class="font-mono text-xs space-y-2 text-gray-500 uppercase">
+<li class="flex items-center gap-2"><div class="w-1 h-1 bg-primary"></div> Bombas de calor industriales</li>
+<li class="flex items-center gap-2"><div class="w-1 h-1 bg-primary"></div> Suelo radiante sectorizado</li>
+<li class="flex items-center gap-2"><div class="w-1 h-1 bg-primary"></div> Recuperación de calor</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col">
+<div class="flex-1 p-8 md:p-12 border-b border-border-light dark:border-border-dark hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-300 group">
+<div class="flex justify-between mb-8">
+<span class="font-mono text-xs text-primary">05</span>
+<span class="material-icons text-3xl font-light">lightbulb</span> 
+</div>
+<h3 class="text-3xl font-display mb-2">Iluminación LED</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-4 group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors">
+                            Renovación inteligente con sensores de presencia y regulación DALI.
+                        </p>
+</div>
+<div class="flex-1 p-8 md:p-12 hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-300 group">
+<div class="flex justify-between mb-8">
+<span class="font-mono text-xs text-primary">06</span>
+<span class="material-icons text-3xl font-light">bolt</span>
+</div>
+<h3 class="text-3xl font-display mb-2">Mini Eólica</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-4 group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors">
+                            Generación distribuida para entornos industriales con recurso de viento.
+                        </p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 border-b border-border-light dark:border-border-dark">
+<div class="border-r border-border-light dark:border-border-dark">
+<div class="p-8 border-b border-border-light dark:border-border-dark hover:pl-10 transition-all duration-300 cursor-pointer group">
+<div class="flex items-baseline gap-4">
+<span class="font-mono text-xs text-primary">07</span>
+<h4 class="text-2xl font-display">Movilidad Eléctrica</h4>
+</div>
+<div class="mt-4 pl-8 border-l border-gray-300 dark:border-gray-800 h-0 overflow-hidden group-hover:h-auto group-hover:pt-2 transition-all">
+<p class="text-sm text-gray-500">Infraestructura de recarga (IRVE) para flotas corporativas y empleados.</p>
+</div>
+</div>
+<div class="p-8 border-b md:border-b-0 border-border-light dark:border-border-dark hover:pl-10 transition-all duration-300 cursor-pointer group">
+<div class="flex items-baseline gap-4">
+<span class="font-mono text-xs text-primary">08</span>
+<h4 class="text-2xl font-display">Huella de Carbono</h4>
+</div>
+<div class="mt-4 pl-8 border-l border-gray-300 dark:border-gray-800 h-0 overflow-hidden group-hover:h-auto group-hover:pt-2 transition-all">
+<p class="text-sm text-gray-500">Medición alcance 1, 2 y 3. Planes de reducción y compensación certificados.</p>
+</div>
+</div>
+</div>
+<div>
+<div class="p-8 border-b border-border-light dark:border-border-dark hover:pl-10 transition-all duration-300 cursor-pointer group">
+<div class="flex items-baseline gap-4">
+<span class="font-mono text-xs text-primary">09</span>
+<h4 class="text-2xl font-display">Certificados CAEs</h4>
+</div>
+<div class="mt-4 pl-8 border-l border-gray-300 dark:border-gray-800 h-0 overflow-hidden group-hover:h-auto group-hover:pt-2 transition-all">
+<p class="text-sm text-gray-500">Gestión de Certificados de Ahorro Energético para monetizar la eficiencia.</p>
+</div>
+</div>
+<div class="p-8 hover:pl-10 transition-all duration-300 cursor-pointer group">
+<div class="flex items-baseline gap-4">
+<span class="font-mono text-xs text-primary">10</span>
+<h4 class="text-2xl font-display">Hidrógeno Verde</h4>
+</div>
+<div class="mt-4 pl-8 border-l border-gray-300 dark:border-gray-800 h-0 overflow-hidden group-hover:h-auto group-hover:pt-2 transition-all">
+<p class="text-sm text-gray-500">Proyectos pioneros de producción y consumo de H2 para industria pesada.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative bg-background-light dark:bg-background-dark py-24 px-6 overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+<span class="text-[20vw] font-display font-bold text-stroke">FUTURE</span>
+</div>
+<div class="max-w-[1920px] mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
+<div>
+<span class="font-mono text-xs uppercase tracking-widest text-primary mb-4 block">Soluciones Complementarias</span>
+<h2 class="text-5xl md:text-7xl font-display tracking-tighter mb-8">Pack Sostenibilidad</h2>
+<p class="text-lg md:text-xl font-light max-w-md mb-8 text-gray-600 dark:text-gray-400">
+                            Un enfoque 360º que integra compras verdes, responsabilidad social corporativa y cumplimiento normativo en un único servicio.
+                        </p>
+<a class="inline-flex items-center gap-4 text-sm font-mono uppercase tracking-widest border border-gray-900 dark:border-gray-100 px-8 py-4 hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="#">
+                            Solicitar Propuesta
+                        </a>
+</div>
+<div class="hidden lg:block h-64 w-full bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-900 dark:to-black border border-border-light dark:border-border-dark relative">
+<div class="absolute inset-0" style="background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="absolute bottom-4 left-4 font-mono text-xs text-gray-500">
+                            E: 100%<br/>
+                            C02: 0%
+                        </div>
+<div class="absolute top-4 right-4 font-mono text-xs text-gray-500 text-right">
+                            STATUS: ACTIVE<br/>
+                            GRID: ON
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<footer class="border-t border-border-light dark:border-border-dark py-6 px-6 bg-background-light dark:bg-background-dark">
+<div class="max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-xs font-mono text-gray-500 uppercase">
+                    © 2024 Energy Partner Independent
+                </div>
+<div class="flex gap-8">
+<a class="text-xs font-mono text-gray-500 hover:text-primary uppercase" href="#">Legal</a>
+<a class="text-xs font-mono text-gray-500 hover:text-primary uppercase" href="#">Privacidad</a>
+<a class="text-xs font-mono text-gray-500 hover:text-primary uppercase" href="#">Contacto</a>
+</div>
+<div class="text-xs font-mono text-gray-500 uppercase">
+                    [ES] / EN
+                </div>
+</div>
+</footer>
+</main>
+<script>
+        // Simple toggle for demonstration purposes - click the logo
+        const logo = document.querySelector('.font-display.font-bold');
+        logo.style.cursor = 'pointer';
+        logo.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    </script>
+
+</body></html>

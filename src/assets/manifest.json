@@ -1,0 +1,39 @@
+{
+    "version": "1.0.0",
+    "lastUpdated": "2024-12-14",
+    "assets": [],
+    "sources": {
+        "images": [
+            "https://unsplash.com",
+            "https://pexels.com"
+        ],
+        "svg": [
+            "https://heroicons.com",
+            "https://feathericons.com"
+        ],
+        "lottie": [
+            "https://lottiefiles.com"
+        ]
+    },
+    "optimizationRules": {
+        "images": {
+            "formats": [
+                "avif",
+                "webp",
+                "jpg"
+            ],
+            "maxWidth": 1920,
+            "quality": 85,
+            "lazyLoad": true
+        },
+        "svg": {
+            "optimize": true,
+            "removeMetadata": true,
+            "convertToSymbols": false
+        }
+    },
+    "licenses": {
+        "defaultLicense": "CC0 / Royalty-free",
+        "requireAttribution": []
+    }
+}

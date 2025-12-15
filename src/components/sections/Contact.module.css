@@ -1,0 +1,138 @@
+.section {
+    min-height: 80vh;
+    padding: var(--spacing-24) 0;
+    position: relative;
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.8) 0%, #050505 100%);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-16);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.textCol {
+    padding-top: var(--spacing-8);
+}
+
+.title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-4);
+}
+
+.highlight {
+    color: var(--color-accent-primary);
+}
+
+.desc {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-8);
+    max-width: 450px;
+    line-height: 1.6;
+}
+
+.benefitsList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.benefitsList li {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.formCol {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: var(--spacing-8);
+    backdrop-filter: blur(10px);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.inputGroup {
+    position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.3s;
+    padding-top: 1.5rem;
+}
+
+.inputGroup.focused {
+    border-color: var(--color-accent-primary);
+}
+
+.label {
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    color: var(--color-text-secondary);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 1rem;
+}
+
+.inputGroup.focused .label {
+    top: 0;
+    font-size: 0.75rem;
+    color: var(--color-accent-primary);
+}
+
+.input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.125rem;
+    padding: 0.5rem 0;
+    outline: none;
+}
+
+.submitBtn {
+    margin-top: var(--spacing-4);
+    background: var(--color-accent-primary);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    transition: background 0.3s;
+}
+
+.submitBtn:hover {
+    background: var(--color-accent-secondary);
+    color: black;
+}
+
+.arrowIcon {
+    transition: transform 0.3s;
+}
+
+.submitBtn:hover .arrowIcon {
+    transform: translateX(4px);
+}
+
+@media(max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+    }
+}

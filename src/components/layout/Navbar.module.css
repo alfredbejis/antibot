@@ -1,0 +1,97 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    z-index: 1000;
+    transition: background-color var(--transition-base), backdrop-filter var(--transition-base), padding var(--transition-base);
+    display: flex;
+    align-items: center;
+}
+
+.scrolled {
+    background-color: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+    /* Equal gap between logo and links */
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logoText {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+}
+
+.navLinks {
+    display: flex;
+    gap: 4rem;
+    /* Same gap as between logo and first link */
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks li {
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+    text-decoration: none;
+}
+
+.navLinks a:hover {
+    color: var(--color-text-primary);
+}
+
+.ctaButton {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-primary) !important;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.ctaButton:hover {
+    background-color: var(--color-accent-primary);
+    color: white !important;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .navContent {
+        gap: 2rem;
+    }
+
+    .navLinks {
+        gap: 1.5rem;
+    }
+
+    .navLinks a {
+        font-size: 0.8rem;
+    }
+
+    .logoText {
+        font-size: 1rem;
+    }
+}

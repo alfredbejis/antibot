@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Departamento de Eficiencia Energética</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FBBF24", // An energetic amber/yellow as seen in reference accent
+                        "background-light": "#F0F0F0",
+                        "background-dark": "#050505",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#121212",
+                        "text-light": "#1A1A1A",
+                        "text-dark": "#E5E5E5",
+                        "accent-dark": "#262626",
+                        "accent-light": "#E0E0E0",
+                    },
+                    fontFamily: {
+                        display: ["'Space Grotesk'", "sans-serif"],
+                        body: ["'Inter'", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #555;
+            border-radius: 4px;
+        }
+        .grid-line-x {
+            background-image: linear-gradient(to right, #333 1px, transparent 1px);
+            background-size: 40px 100%;
+        }
+        .grid-line-y {
+            background-image: linear-gradient(to bottom, #333 1px, transparent 1px);
+            background-size: 100% 40px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-300">
+<nav class="fixed top-0 left-0 w-full z-50 mix-blend-difference text-white px-6 py-4 flex justify-between items-center border-b border-black/10 dark:border-white/10">
+<div class="font-display font-bold text-xl tracking-tighter uppercase">
+            Energy<span class="font-light opacity-70">Partner</span>
+</div>
+<div class="flex items-center gap-2 cursor-pointer group">
+<span class="font-display text-sm tracking-wider uppercase group-hover:text-primary transition-colors">Menú</span>
+<span class="text-sm font-mono">[+]</span>
+</div>
+</nav>
+<header class="relative min-h-[80vh] flex flex-col justify-between px-6 py-24 md:py-32 border-b border-accent-light dark:border-accent-dark overflow-hidden">
+<div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.1] pointer-events-none" style="background-image: linear-gradient(#999 1px, transparent 1px), linear-gradient(90deg, #999 1px, transparent 1px); background-size: 4rem 4rem;">
+</div>
+<div class="relative z-10 max-w-7xl mx-auto w-full">
+<h1 class="font-display text-[12vw] leading-[0.85] tracking-tighter uppercase mb-8">
+                Depto<span class="block text-primary dark:text-white mix-blend-exclusion">Eficiencia</span>
+<span class="block ml-[5vw]">Energética</span>
+</h1>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="max-w-md">
+<p class="font-mono text-xs mb-2 opacity-60 uppercase tracking-widest">[ Contexto ]</p>
+<p class="text-xl md:text-2xl font-light leading-snug">
+                    Soluciones integrales para la optimización del consumo en industrias y grandes empresas. 
+                    <span class="opacity-50">Reducimos costes, maximizamos rendimiento.</span>
+</p>
+</div>
+<div class="flex flex-col items-end">
+<div class="font-mono text-xs opacity-60 mb-2">SCROLL PARA EXPLORAR</div>
+<span class="material-icons animate-bounce">arrow_downward</span>
+</div>
+</div>
+</header>
+<main class="relative">
+<div class="sticky top-0 z-20 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border-b border-accent-light dark:border-accent-dark px-6 py-4 flex justify-between items-center">
+<span class="font-mono text-xs uppercase tracking-widest opacity-70">Capítulos de Eficiencia</span>
+<span class="font-display text-4xl font-bold">01—04</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<section class="group relative border-b lg:border-r border-accent-light dark:border-accent-dark min-h-[50vh] p-8 md:p-12 flex flex-col justify-between hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500">
+<div class="flex justify-between items-start mb-12">
+<span class="font-mono text-sm border border-black/20 dark:border-white/20 rounded-full px-3 py-1">01</span>
+<span class="material-icons text-4xl group-hover:text-primary transition-colors">analytics</span>
+</div>
+<div>
+<h2 class="font-display text-4xl md:text-5xl font-medium tracking-tight mb-6 group-hover:translate-x-2 transition-transform duration-500">Auditoría<br/>Inicial</h2>
+<div class="h-px w-full bg-accent-light dark:bg-accent-dark mb-6 origin-left group-hover:scale-x-110 transition-transform duration-700"></div>
+<p class="text-lg opacity-80 max-w-md font-light">
+                        Evaluación exhaustiva de los patrones de consumo actuales. Identificamos fugas energéticas y puntos críticos de mejora inmediata mediante monitorización en tiempo real.
+                    </p>
+</div>
+<div class="mt-8 pt-4 border-t border-dashed border-accent-light dark:border-accent-dark flex justify-between text-xs font-mono opacity-60">
+<span>STATUS: ACTIVO</span>
+<span>TIPO: DIAGNÓSTICO</span>
+</div>
+</section>
+<section class="group relative border-b border-accent-light dark:border-accent-dark min-h-[50vh] p-8 md:p-12 flex flex-col justify-between hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500">
+<div class="flex justify-between items-start mb-12">
+<span class="font-mono text-sm border border-black/20 dark:border-white/20 rounded-full px-3 py-1">02</span>
+<span class="material-icons text-4xl group-hover:text-primary transition-colors">tune</span>
+</div>
+<div>
+<h2 class="font-display text-4xl md:text-5xl font-medium tracking-tight mb-6 group-hover:translate-x-2 transition-transform duration-500">Optimización<br/>Técnica</h2>
+<div class="h-px w-full bg-accent-light dark:bg-accent-dark mb-6 origin-left group-hover:scale-x-110 transition-transform duration-700"></div>
+<p class="text-lg opacity-80 max-w-md font-light">
+                        Implementación de hardware y software de última generación. Ajuste de curvas de carga y eliminación de energía reactiva para una facturación limpia.
+                    </p>
+</div>
+<div class="mt-8 pt-4 border-t border-dashed border-accent-light dark:border-accent-dark flex justify-between text-xs font-mono opacity-60">
+<span>TARGET: -20% COSTOS</span>
+<span>TIPO: HARDWARE</span>
+</div>
+</section>
+<section class="group relative border-b lg:border-r lg:border-b-0 border-accent-light dark:border-accent-dark min-h-[50vh] p-8 md:p-12 flex flex-col justify-between hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500">
+<div class="flex justify-between items-start mb-12">
+<span class="font-mono text-sm border border-black/20 dark:border-white/20 rounded-full px-3 py-1">03</span>
+<span class="material-icons text-4xl group-hover:text-primary transition-colors">solar_power</span>
+</div>
+<div>
+<h2 class="font-display text-4xl md:text-5xl font-medium tracking-tight mb-6 group-hover:translate-x-2 transition-transform duration-500">Integración<br/>Renovable</h2>
+<div class="h-px w-full bg-accent-light dark:bg-accent-dark mb-6 origin-left group-hover:scale-x-110 transition-transform duration-700"></div>
+<p class="text-lg opacity-80 max-w-md font-light">
+                        Transición hacia el autoconsumo. Diseño e instalación de parques fotovoltaicos industriales y sistemas de almacenamiento energético a gran escala.
+                    </p>
+</div>
+<div class="mt-8 pt-4 border-t border-dashed border-accent-light dark:border-accent-dark flex justify-between text-xs font-mono opacity-60">
+<span>ROI: 3-5 AÑOS</span>
+<span>TIPO: INFRAESTRUCTURA</span>
+</div>
+</section>
+<section class="group relative min-h-[50vh] p-8 md:p-12 flex flex-col justify-between hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500">
+<div class="absolute right-0 bottom-0 w-64 h-64 opacity-10 pointer-events-none overflow-hidden">
+<div class="w-full h-full border border-current rounded-full translate-x-1/2 translate-y-1/2"></div>
+<div class="absolute inset-0 border border-current rounded-full translate-x-1/2 translate-y-1/2 scale-75"></div>
+<div class="absolute inset-0 border border-current rounded-full translate-x-1/2 translate-y-1/2 scale-50"></div>
+</div>
+<div class="flex justify-between items-start mb-12 relative z-10">
+<span class="font-mono text-sm border border-black/20 dark:border-white/20 rounded-full px-3 py-1">04</span>
+<span class="material-icons text-4xl group-hover:text-primary transition-colors">visibility</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-display text-4xl md:text-5xl font-medium tracking-tight mb-6 group-hover:translate-x-2 transition-transform duration-500">Gestión<br/>Continua</h2>
+<div class="h-px w-full bg-accent-light dark:bg-accent-dark mb-6 origin-left group-hover:scale-x-110 transition-transform duration-700"></div>
+<p class="text-lg opacity-80 max-w-md font-light">
+                        Servicio de asesoría permanente. Monitorización 24/7 y compras estratégicas de energía en el mercado mayorista para asegurar siempre el mejor precio.
+                    </p>
+</div>
+<div class="mt-8 pt-4 border-t border-dashed border-accent-light dark:border-accent-dark flex justify-between text-xs font-mono opacity-60 relative z-10">
+<span>SLA: 99.9%</span>
+<span>TIPO: SERVICIO</span>
+</div>
+</section>
+</div>
+</main>
+<section class="py-24 px-6 border-t border-accent-light dark:border-accent-dark bg-surface-light dark:bg-surface-dark">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16">
+<h3 class="font-display text-3xl md:text-4xl">Especificaciones Técnicas</h3>
+<p class="font-mono text-sm opacity-60 mt-4 md:mt-0">[ TABLA DE SERVICIOS V.3.0 ]</p>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b-2 border-black dark:border-white text-xs font-mono uppercase tracking-wider">
+<th class="py-4 pr-8 font-normal opacity-60">Categoría</th>
+<th class="py-4 pr-8 font-normal opacity-60">Implementación</th>
+<th class="py-4 pr-8 font-normal opacity-60">Ahorro Est.</th>
+<th class="py-4 font-normal opacity-60 text-right">Detalle</th>
+</tr>
+</thead>
+<tbody class="font-light">
+<tr class="border-b border-accent-light dark:border-accent-dark group hover:bg-background-light dark:hover:bg-background-dark/50 transition-colors">
+<td class="py-6 pr-8 font-display text-xl">Iluminación LED Inteligente</td>
+<td class="py-6 pr-8">Inmediata (Plug &amp; Play)</td>
+<td class="py-6 pr-8">~45-60%</td>
+<td class="py-6 text-right"><span class="material-icons text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span></td>
+</tr>
+<tr class="border-b border-accent-light dark:border-accent-dark group hover:bg-background-light dark:hover:bg-background-dark/50 transition-colors">
+<td class="py-6 pr-8 font-display text-xl">Compensación de Reactiva</td>
+<td class="py-6 pr-8">2-3 Semanas</td>
+<td class="py-6 pr-8">~15-25%</td>
+<td class="py-6 text-right"><span class="material-icons text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span></td>
+</tr>
+<tr class="border-b border-accent-light dark:border-accent-dark group hover:bg-background-light dark:hover:bg-background-dark/50 transition-colors">
+<td class="py-6 pr-8 font-display text-xl">Autoconsumo Solar</td>
+<td class="py-6 pr-8">3-6 Meses</td>
+<td class="py-6 pr-8">~40-70%</td>
+<td class="py-6 text-right"><span class="material-icons text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span></td>
+</tr>
+<tr class="group hover:bg-background-light dark:hover:bg-background-dark/50 transition-colors">
+<td class="py-6 pr-8 font-display text-xl">Telegestión 360°</td>
+<td class="py-6 pr-8">Software SaaS</td>
+<td class="py-6 pr-8">~10-15%</td>
+<td class="py-6 text-right"><span class="material-icons text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<footer class="bg-background-light dark:bg-background-dark border-t border-accent-light dark:border-accent-dark pt-20 pb-10 px-6">
+<div class="max-w-7xl mx-auto flex flex-col justify-between min-h-[40vh]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+<div>
+<h4 class="font-mono text-xs uppercase tracking-widest opacity-60 mb-6">Contacto</h4>
+<p class="text-lg font-light hover:text-primary cursor-pointer transition-colors">hola@energypartner.com</p>
+<p class="text-lg font-light mt-2">+34 900 123 456</p>
+</div>
+<div>
+<h4 class="font-mono text-xs uppercase tracking-widest opacity-60 mb-6">Oficinas</h4>
+<p class="text-lg font-light">Paseo de la Castellana, 89</p>
+<p class="text-lg font-light">Madrid, España</p>
+</div>
+<div class="lg:col-span-2 flex flex-col items-start lg:items-end">
+<button class="group relative px-8 py-4 bg-primary text-black font-display font-bold uppercase tracking-wider text-sm overflow-hidden rounded-sm">
+<span class="relative z-10">Solicitar Auditoría</span>
+<div class="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
+</button>
+</div>
+</div>
+<div class="border-t border-accent-light dark:border-accent-dark pt-8 flex flex-col md:flex-row justify-between items-end md:items-center gap-4">
+<div class="flex items-end h-12 gap-[2px] opacity-80">
+<div class="w-1 bg-current h-full"></div>
+<div class="w-2 bg-current h-full"></div>
+<div class="w-1 bg-current h-3/4"></div>
+<div class="w-3 bg-current h-full"></div>
+<div class="w-1 bg-current h-1/2"></div>
+<div class="w-4 bg-current h-full"></div>
+<div class="w-2 bg-current h-3/4"></div>
+<div class="w-1 bg-current h-full"></div>
+</div>
+<div class="flex flex-col md:flex-row gap-6 md:gap-12 text-xs font-mono opacity-60 uppercase">
+<a class="hover:text-primary transition-colors" href="#">Aviso Legal</a>
+<a class="hover:text-primary transition-colors" href="#">Privacidad</a>
+<a class="hover:text-primary transition-colors" href="#">Cookies</a>
+<span>© 2023 Energy Partner</span>
+</div>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-6 right-6 z-50 mix-blend-difference pointer-events-none hidden md:block">
+<div class="w-32 h-32 border border-white/20 rounded-full flex items-center justify-center animate-spin-slow" style="animation-duration: 20s;">
+<svg class="w-full h-full p-2" viewBox="0 0 100 100">
+<path d="M 50 50 m -37 0 a 37 37 0 1 1 74 0 a 37 37 0 1 1 -74 0" fill="transparent" id="curve"></path>
+<text class="text-[10px] uppercase font-mono tracking-[0.2em] fill-white">
+<textPath href="#curve">
+                        Energía · Eficiencia · Futuro · Sostenible ·
+                    </textPath>
+</text>
+</svg>
+</div>
+</div>
+
+</body></html>

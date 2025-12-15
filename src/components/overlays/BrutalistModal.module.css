@@ -1,0 +1,48 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(244, 244, 244, 0.95);
+    /* High opacity technical background */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalContainer {
+    background: #fff;
+    border: 2px solid #000;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+    /* Brutalist shadow */
+}
+
+.header {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeBtn {
+    background: transparent;
+    border: none;
+    color: var(--accent-primary);
+    font-family: var(--font-family-mono);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.content {
+    padding: 2rem;
+    max-height: 80vh;
+    overflow-y: auto;
+}

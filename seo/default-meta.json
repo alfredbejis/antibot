@@ -1,0 +1,47 @@
+{
+    "defaults": {
+        "titleTemplate": "%s | Antigravity",
+        "titleDefault": "Antigravity - Landing Page de Alto Rendimiento",
+        "description": "Plataforma fundacional para landing pages con animaciones avanzadas, WebGL y optimización CRO",
+        "keywords": [
+            "landing page",
+            "web development",
+            "high performance",
+            "animations",
+            "CRO"
+        ],
+        "author": "Antigravity System",
+        "robots": "index, follow",
+        "viewport": "width=device-width, initial-scale=1.0"
+    },
+    "openGraph": {
+        "type": "website",
+        "locale": "es_ES",
+        "siteName": "Antigravity",
+        "title": "Antigravity - Landing Page de Alto Rendimiento",
+        "description": "Plataforma fundacional para landing pages con animaciones avanzadas",
+        "image": "/assets/og-image.png",
+        "imageWidth": 1200,
+        "imageHeight": 630
+    },
+    "twitter": {
+        "card": "summary_large_image",
+        "site": "@antigravity",
+        "creator": "@antigravity",
+        "title": "Antigravity - Landing Page de Alto Rendimiento",
+        "description": "Plataforma fundacional para landing pages con animaciones avanzadas",
+        "image": "/assets/twitter-card.png"
+    },
+    "canonicalization": {
+        "preferWww": false,
+        "forceHttps": true,
+        "trailingSlash": false
+    },
+    "hreflang": {
+        "default": "es",
+        "supported": [
+            "es",
+            "en"
+        ]
+    }
+}

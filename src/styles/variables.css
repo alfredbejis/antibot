@@ -1,0 +1,52 @@
+:root {
+  /* Swiss Grid Palette */
+  --bg-primary: #F4F4F4;
+  /* Industrial Light Grey */
+  --bg-secondary: #EAEAEA;
+  /* Slightly darker for cards */
+  --text-primary: #111111;
+  /* Ink Black */
+  --text-secondary: #555555;
+  /* Technical Grey */
+
+  --accent-primary: #FFC800;
+  /* Safety Yellow */
+  --accent-secondary: #000000;
+  /* Contrast Black */
+
+  --grid-line: rgba(0, 0, 0, 0.06);
+  /* Subtle Grid */
+  --border-strong: #111111;
+
+  /* Typography */
+  --font-family-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-mono: 'Space Mono', monospace;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 3rem;
+  --font-size-3xl: 4.5rem;
+  --font-size-4xl: 6rem;
+  /* Massive Swiss Headers */
+  --font-size-huge: 8rem;
+
+  /* Spacing (Grid Units) */
+  --spacing-unit: 8px;
+  --spacing-1: var(--spacing-unit);
+  --spacing-2: calc(var(--spacing-unit) * 2);
+  --spacing-4: calc(var(--spacing-unit) * 4);
+  --spacing-8: calc(var(--spacing-unit) * 8);
+  --spacing-16: calc(var(--spacing-unit) * 16);
+  --spacing-24: calc(var(--spacing-unit) * 24);
+
+  /* Layout */
+  --container-width: 90%;
+  --header-height: 80px;
+
+  /* Animation */
+  --transition-fast: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}

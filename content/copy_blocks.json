@@ -1,0 +1,37 @@
+{
+    "version": "1.0.0",
+    "blocks": {
+        "hero": {
+            "headline": {
+                "formal": "Soluciones de alto rendimiento para su negocio",
+                "neutral": "Transforma tu presencia digital",
+                "friendly": "¡Impulsa tu negocio al siguiente nivel!"
+            },
+            "subheadline": {
+                "formal": "Plataforma tecnológica avanzada para optimización de conversión y experiencia de usuario.",
+                "neutral": "Sistema fundacional para landing pages con animaciones cinematográficas y optimización CRO.",
+                "friendly": "Creamos páginas que enamoran a tus visitantes y los convierten en clientes."
+            }
+        },
+        "cta": {
+            "primary": {
+                "formal": "Solicitar consulta",
+                "neutral": "Comenzar ahora",
+                "friendly": "¡Empezamos!"
+            },
+            "secondary": {
+                "formal": "Ver información",
+                "neutral": "Ver proceso",
+                "friendly": "Descubre cómo"
+            }
+        },
+        "benefits": [],
+        "socialProof": [],
+        "faq": []
+    },
+    "metadata": {
+        "defaultTone": "neutral",
+        "targetAudience": "B2B / Premium consumers",
+        "conversionGoal": "Lead generation"
+    }
+}

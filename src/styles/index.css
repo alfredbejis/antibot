@@ -1,0 +1,91 @@
+@import './variables.css';
+
+/* Modern Reset & Swiss Grid Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--font-family-body);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overflow-x: hidden;
+    /* Prevent grid overflow */
+    line-height: 1.4;
+    /* Grid lines are handled by the GridBackground component, but we can add a base noise if needed */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-body);
+    font-weight: 500;
+    /* Regular weights are common in Swiss style */
+    letter-spacing: -0.03em;
+    /* Tight tracking for massive headers */
+    color: var(--text-primary);
+}
+
+.mono {
+    font-family: var(--font-family-mono);
+    letter-spacing: -0.02em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utilities */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+    position: relative;
+    z-index: 10;
+    /* Above grid */
+}
+
+/* Grid Border Utility */
+.border-top {
+    border-top: 1px solid var(--grid-line);
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--grid-line);
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}

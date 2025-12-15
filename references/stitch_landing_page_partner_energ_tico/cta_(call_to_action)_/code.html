@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Partner Energético - Estudio Gratuito</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FBBF24", // Amber/Yellow accent similar to reference 3
+                        "background-light": "#EAEAEA",
+                        "background-dark": "#050505",
+                        "neutral-light": "#F5F5F5",
+                        "neutral-dark": "#1A1A1A",
+                    },
+                    fontFamily: {
+                        display: ["'Space Grotesk'", "sans-serif"],
+                        body: ["'Inter'", "sans-serif"],
+                        mono: ["'IBM Plex Mono'", "monospace"],
+                    },
+                    fontSize: {
+                        '10xl': '10rem',
+                        '11xl': '12rem',
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px", // Keeping it sharp/industrial per reference
+                    },
+                    letterSpacing: {
+                        tighter: '-0.04em',
+                        tightest: '-0.06em',
+                    }
+                },
+            },
+        };
+    </script>
+<style>html { scroll-behavior: smooth; }::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #444; 
+        }.bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+        .light-mode-grid {
+             background-size: 40px 40px;
+             background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                               linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white transition-colors duration-300 font-body min-h-screen flex flex-col">
+<nav class="fixed top-0 w-full z-50 mix-blend-difference text-white px-6 py-6 flex justify-between items-center font-mono text-sm uppercase tracking-widest border-b border-gray-300 dark:border-gray-800 backdrop-blur-sm">
+<div class="flex items-center gap-2">
+<span class="text-primary">[+]</span> PARTNER ENERGÉTICO
+        </div>
+<button class="hover:text-primary transition-colors duration-300">
+            MENU [+]
+        </button>
+</nav>
+<main class="flex-grow relative flex flex-col justify-center w-full px-4 sm:px-8 lg:px-12 pt-24 pb-12 overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20 pointer-events-none light-mode-grid dark:bg-grid"></div>
+<div class="fixed top-24 left-8 w-4 h-4 border-l border-t border-gray-400 dark:border-gray-600"></div>
+<div class="fixed top-24 right-8 w-4 h-4 border-r border-t border-gray-400 dark:border-gray-600"></div>
+<div class="fixed bottom-8 left-8 w-4 h-4 border-l border-b border-gray-400 dark:border-gray-600"></div>
+<div class="fixed bottom-8 right-8 w-4 h-4 border-r border-b border-gray-400 dark:border-gray-600"></div>
+<div class="hidden lg:block fixed left-8 top-1/2 -translate-y-1/2 font-mono text-xs text-gray-500 dark:text-gray-500 transform -rotate-90 origin-left tracking-widest whitespace-nowrap">
+            COORD: 40.4168° N, 3.7038° W — STATUS: ACTIVE
+        </div>
+<div class="relative z-10 w-full max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-end lg:items-center justify-between gap-12 lg:gap-24 h-full min-h-[70vh]">
+<div class="flex-1 w-full">
+<div class="mb-4 font-mono text-xs text-primary uppercase tracking-widest">
+                    /// OPORTUNIDAD VÁLIDA PARA EMPRESAS Y HOGARES
+                </div>
+<h1 class="font-display font-medium text-6xl md:text-8xl lg:text-9xl tracking-tighter leading-[0.9] text-gray-900 dark:text-white mb-8 md:mb-12">
+                    Estudio <br/>
+<span class="italic font-light text-gray-400 dark:text-gray-500">Energético</span><br/>
+                    Gratuito
+                </h1>
+<div class="border-t border-gray-900 dark:border-white w-full max-w-md pt-6 flex flex-col gap-4">
+<p class="font-body text-lg md:text-xl leading-relaxed max-w-sm text-gray-700 dark:text-gray-300">
+                        Optimizamos el consumo de su industria, negocio o domicilio particular. Soluciones integrales sin coste inicial.
+                    </p>
+</div>
+</div>
+<div class="w-full lg:w-1/3 flex flex-col items-start lg:items-end justify-between h-full gap-12">
+<div class="hidden lg:block">
+<svg class="text-gray-900 dark:text-white animate-spin-slow duration-[20s]" fill="none" height="200" viewBox="0 0 200 200" width="200" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" r="98" stroke="currentColor" stroke-dasharray="10 5" stroke-width="1"></circle>
+<circle class="text-primary" cx="100" cy="100" fill="currentColor" r="40"></circle>
+<path d="M100 0 L100 200 M0 100 L200 100" opacity="0.5" stroke="currentColor" stroke-width="0.5"></path>
+</svg>
+</div>
+<div class="w-full flex flex-col gap-6">
+<div class="flex justify-between items-end border-b border-gray-400 dark:border-gray-700 pb-2 font-mono text-xs uppercase tracking-widest text-gray-500">
+<span>Acción Requerida</span>
+<span>01</span>
+</div>
+<a class="group relative w-full overflow-hidden bg-gray-900 dark:bg-white text-white dark:text-black py-8 px-8 flex items-center justify-between transition-all hover:bg-primary dark:hover:bg-primary hover:text-black dark:hover:text-black" href="#">
+<span class="font-display text-3xl md:text-4xl tracking-tight z-10 relative">Solicitar Estudio</span>
+<span class="z-10 relative transform group-hover:translate-x-2 transition-transform duration-300">
+<svg fill="none" height="24" viewBox="0 0 48 24" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 12H46M46 12L36 2M46 12L36 22" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</span>
+<div class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></div>
+</a>
+<div class="flex justify-between font-mono text-xs text-gray-500 dark:text-gray-500 mt-2">
+<span>TIEMPO ESTIMADO: 2 MIN</span>
+<span>*OFERTA LIMITADA</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-auto pt-24 border-t border-gray-300 dark:border-gray-800 w-full">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 font-mono text-xs uppercase tracking-widest">
+<div class="flex flex-col gap-2">
+<span class="text-gray-500">Servicios</span>
+<ul class="text-gray-900 dark:text-white space-y-1">
+<li>Auditoría Industrial</li>
+<li>Eficiencia Pyme</li>
+<li>Hogares (Nuevo)</li>
+</ul>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-gray-500">Contacto</span>
+<ul class="text-gray-900 dark:text-white space-y-1">
+<li>info@partner.com</li>
+<li>+34 900 000 000</li>
+</ul>
+</div>
+<div class="flex flex-col gap-2 col-span-2 md:col-span-2 items-start md:items-end">
+<span class="text-gray-500 mb-2">Certificaciones</span>
+<div class="flex gap-4">
+<div class="h-8 w-24 bg-gray-300 dark:bg-gray-800"></div>
+<div class="h-8 w-24 bg-gray-300 dark:bg-gray-800"></div>
+</div>
+</div>
+</div>
+<div class="mt-12 flex flex-col md:flex-row justify-between items-end md:items-center gap-4">
+<div class="flex h-8 gap-1 items-end">
+<div class="w-1 h-8 bg-black dark:bg-white"></div>
+<div class="w-2 h-8 bg-black dark:bg-white"></div>
+<div class="w-1 h-8 bg-black dark:bg-white"></div>
+<div class="w-4 h-8 bg-black dark:bg-white"></div>
+<div class="w-1 h-8 bg-black dark:bg-white"></div>
+<div class="w-3 h-8 bg-black dark:bg-white"></div>
+<div class="w-1 h-8 bg-black dark:bg-white"></div>
+<div class="w-2 h-8 bg-black dark:bg-white"></div>
+<div class="w-1 h-8 bg-black dark:bg-white"></div>
+</div>
+<p class="font-mono text-xs text-gray-500">© 2024 PARTNER ENERGÉTICO — ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</main>
+<button class="fixed bottom-8 right-8 z-50 p-4 bg-gray-200 dark:bg-gray-800 rounded-full shadow-lg hover:scale-110 transition-transform" onclick="document.documentElement.classList.toggle('dark')">
+<svg class="h-6 w-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+
+</body></html>

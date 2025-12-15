@@ -1,0 +1,106 @@
+/* Inherit previous styles */
+@import '../../styles/variables.css';
+
+.section {
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gridWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+/* Header Type */
+.headerBlock {
+    max-width: 90%;
+    margin-bottom: 4rem;
+}
+
+.metaRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+.metaRow::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 20px;
+    height: 1px;
+    background: #000;
+}
+
+.massiveTitle {
+    font-size: clamp(4rem, 10vw, 11rem);
+    line-height: 0.85;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.line {
+    display: block;
+    overflow: hidden;
+    /* For reveal animations */
+}
+
+.yellowSpan {
+    color: var(--text-primary);
+    /* changes to yellow via GSAP */
+    transition: color 0.5s ease;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    margin-left: auto;
+    text-align: right;
+    margin-bottom: 3rem;
+}
+
+/* Updated Accordion Wrapper */
+.accordionWrapper {
+    border-top: 2px solid #000;
+}
+
+.cardsHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heroCta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media(min-width: 1024px) {
+    .gridWrapper {
+        grid-template-columns: 1fr;
+        /* Stacked layout for impact */
+    }
+}
