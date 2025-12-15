@@ -105,9 +105,14 @@
 }
 
 @media(max-width: 900px) {
+    .section {
+        padding-top: var(--spacing-16);
+        min-height: auto;
+    }
+
     .gridContainer {
         grid-template-columns: 1fr;
-        gap: var(--spacing-8);
+        gap: var(--spacing-16);
     }
 
     .contactInfo {
@@ -125,17 +130,17 @@
 
     .massiveButton span:last-child {
         align-self: flex-end;
-        /* Arrow */
     }
 
     .footerBar {
         flex-direction: column;
         gap: 1rem;
         padding-bottom: 2rem;
+        margin-top: 2rem;
+        text-align: center;
     }
 
     .barcode {
         display: none;
-        /* Hide barcode on mobile if too cluttered */
     }
 }
