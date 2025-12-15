@@ -106,22 +106,38 @@
 
 @media(max-width: 768px) {
     .section {
-        padding-top: 100px;
+        padding-top: 120px;
+        padding-bottom: 60px;
     }
 
     .massiveTitle {
-        font-size: clamp(3rem, 12vw, 5rem);
-        margin-bottom: 1.5rem;
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        /* Reducir tamaño para evitar cortes */
+        line-height: 1;
+        margin-bottom: 2rem;
+        word-wrap: break-word;
+        hyphens: auto;
     }
 
     .subtitle {
         text-align: left;
         font-size: 1rem;
         margin-left: 0;
+        max-width: 100%;
+        padding-right: 1rem;
     }
 
     .cardsHeader {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .gridWrapper {
+        gap: 2rem;
+    }
+
+    .headerBlock {
+        max-width: 100%;
+        margin-bottom: 3rem;
     }
 }
